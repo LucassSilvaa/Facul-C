@@ -1,0 +1,27 @@
+//Modificar o programa anterior para que informe quantas notas ficaram como
+//aprovados e reprovados analisando o vetor notas, ao final listar todas as notas
+// e a quantidade de aprovados ereprovados, sendo que a média é 7
+#include <stdio.h>
+#include <stdlib.h>
+ int main(){
+     
+     float notas[10];
+     int i, ap = 0,rep=0;
+     
+     printf ("Digite as 10 notas: \n ");
+     for (i = 0; i <= 9; i++){
+         
+         scanf ("%f", &notas [i]);
+         if (notas[i] >= 7){
+             ap++;
+         }else if (notas[i] < 7){
+             rep++;
+         }
+     }
+     for (i=0; i <=9; i++){
+         printf("A posição [%d] do vetor contém a nota : %.1f \n ", i, notas[i]);
+     }
+     printf("\n %d alunos foram aprovados", ap);
+     printf("\n %d alunos foram reprovados", rep);
+     return 0;
+ }

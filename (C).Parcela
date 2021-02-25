@@ -1,0 +1,16 @@
+//A compra de um apartamento financiado tem o valor de sua prestação duplicada
+// a cada ano. Sabendo que no primeiro ano o valor a ser pago é de R$ 80,00,
+// faça um programa que calcule e mostre em quantos anos a prestação estará
+// acima de R$ 5.000,00
+
+#include <stdio.h>
+#include <math.h>
+ int main(){
+     int cont;
+     int ano = 1; 
+     while (cont < 320){
+         cont = 80 * ano;
+        ano ++ ;
+     }printf("A parcela ultrapassou o valor de R$ 5000,00 em %d anos ",ano);
+     return 0;
+ }

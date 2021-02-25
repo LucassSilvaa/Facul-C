@@ -1,0 +1,20 @@
+#include <stdio.h> 
+#include <stdlib.h>
+
+int main(){
+    
+    float notas [10];
+    int i;
+    printf ("Digite as 10 notas: \n");
+    for (i=0; i<= 9; i++){
+        scanf ("%f", &notas[i]);
+    }
+    for (i=0; i <=9; i++){
+        if (i==7){
+            printf("A posição [%d] do vetor contém a nota : %.1f \n", i, notas[i] );
+    }else if (i==9){
+        printf("A posição [%d] do vetor contém a nota : %.1f \n", i, notas [i]);
+    }
+    }
+    return 0;
+}

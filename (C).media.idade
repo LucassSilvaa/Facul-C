@@ -1,0 +1,45 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(){
+
+int id1, id2, id3, id4, id5, id6, id7, id8, id9, id10;
+float med;
+
+printf ("Digite a idade da primeira pessoa : ");
+scanf  ("%d", &id1 );
+printf ("Digite a idade da segunda pessoa : ");
+scanf  ("%d", &id2 );
+printf ("Digite a idade da terceira pessoa : ");
+scanf  ("%d", &id3 );
+printf ("Digite a idade da quarta pessoa : ");
+scanf  ("%d", &id4 );
+printf ("Digite a idade da quinta pessoa : ");
+scanf  ("%d", &id5 );
+printf ("Digite a idade da sexta pessoa : ");
+scanf  ("%d", &id6 );
+printf ("Digite a idade da sétima pessoa : ");
+scanf ("%d", &id7 );
+printf ("Digite a idade da oitava pessoa : ");
+scanf ("%d", &id8 );
+printf ("Digite a idade da nona pessoa : ");
+scanf ("%d", &id9 );
+printf ("Digite a idade da décima pessoa : ");
+scanf ("%d", &id10 );
+
+med = (id1 + id2 + id3 + id4 + id5 + id6 + id7 + id8 + id9 + id10)/10;
+
+if ((med > 0 ) && (med < 25 )) {
+    printf ("A turma é majoritariamente jovem"); 
+    
+   } else if ((med > 26) && (med < 59)) {
+       printf ("A turma é majoritariamente adulta");
+      
+   }else {
+   printf("A turma é majoritariamente idosa");
+   
+} 
+return 0; 
+}

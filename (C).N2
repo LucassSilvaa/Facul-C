@@ -1,0 +1,97 @@
+#include<stdlib.h>
+#include<stdio.h>
+#include<string.h>
+
+int main(){ // função main
+    
+    int ttl,i=0,iA =0,iB=0,iC=0,iD=0,iE=0,iF=0,iG=0,iH=0,iI=0,iJ=0,iK=0,iL=0,iM=0,iN=0,iO=0,iP=0,iQ=0,iR=0,iS=0,iT=0,iU=0,iV=0,iW=0,iX=0,iY=0,iZ=0,c=0;  // declarando variáveis
+    char carac[200];  // declarando variáveis
+    char k = 's';    // declarando variáveis
+
+    while(k != 'n'){ // estabelecendo a feature que pergunta ao usuário se deseja executar novamente, ou não
+
+    printf("Digite seus caracteres, utilizando 0 e ENTER para finalizar, sendo o máximo de 200 caracteres: ");/**/
+
+    while ((carac[i] = fgetc(stdin)) != '0'){              // adicionando a resposta dos caracteres ao vetor    
+
+    for(i<=200;carac[i] != '\0'; i++){              // looping que estabelece o limite de 200 caracteres da feature
+        
+        switch (carac[i]){              // reconhecendo como iguais as letras maiusculas e minusuculas
+         case 'a' : iA++; break;
+         case 'A' : iA++;break;
+         case 'b' : iB++;break;
+         case 'B' : iB++;break;
+         case 'c' : iC++;break;
+         case 'C' : iC++;break;
+         case 'd' : iD++;break;
+         case 'D' : iD++;break;
+         case 'e' : iE++;break;
+         case 'E' : iE++;break;
+         case 'F' : iF++;break;
+         case 'f' : iF++;break;
+         case 'g' : iG++;break;
+         case 'G' : iG++;break;
+         case 'h' : iH++;break;
+         case 'H' : iH++;break;
+         case 'i' : iI++;break;
+         case 'I' : iI++;break;
+         case 'J' : iJ++;break;
+         case 'j' : iJ++;break;
+         case 'K' : iK++;break;
+         case 'k' : iK++;break;
+         case 'l' : iL++;break;
+         case 'L' : iL++;break;
+         case 'm' : iM++;break;
+         case 'M' : iM++;break;
+         case 'n' : iN++;break;
+         case 'N' : iN++;break;
+         case 'o' : iO++;break;
+         case 'O' : iO++;break;
+         case 'P' : iP++;break;
+         case 'p' : iP++;break;
+         case 'q' : iQ++;break;
+         case 'Q' : iQ++;break;
+         case 'r' : iR++;break;
+         case 'R' : iR++;break;
+         case 'S' : iS++;break;
+         case 's' : iS++;break;
+         case 't' : iT++;break;
+         case 'T' : iT++;break;
+         case 'u' : iU++;break;
+         case 'U' : iU++;break;
+         case 'v' : iV++;break;
+         case 'V' : iV++;break;
+         case 'w' : iW++;break;
+         case 'W' : iW++;break;
+         case 'x' : iX++;break;
+         case 'X' : iX++;break;
+         case 'y' : iY++;break;
+         case 'Y' : iY++;break;
+         case 'z' : iZ++;break;
+         case 'Z' : iZ++;break;
+            
+        }
+
+    }
+
+}
+    if (carac[i] > 200){
+        printf ("O limite de 200 caracteres foi ultrapassado"); 
+
+        }else{
+        printf("Caracteres:        A B C D E F G H I J K L M N O P Q R S T U V W X Y Z \n");
+        printf("Ocorrencias: %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d", iA,iB,iC,iD,iE,iF,iG,iH,iI,iJ,iK,iL,iM,iN,iO,
+        iP,iQ,iR,iS,iT,iU,iV,iW,iX,iY,iZ);
+
+}
+        ttl = iA + iB + iC + iD + iE + iF + iG + iH + iI + iJ + iK + iL + iM + iN + iO + iP + iQ + iR + iS + iT + iU + iV + iW + iX + iY + iZ; // soma dos contadores de caracteres
+        printf("\n Total de caracteres : %d", ttl);
+
+        iA =0,iB=0,iC=0,iD=0,iE=0,iF=0,iG=0,iH=0,iI=0,iJ=0,iK=0,iL=0,iM=0,iN=0,iO=0,iP=0,iQ=0,iR=0,iS=0,iT=0,iU=0,iV=0,iW=0,iX=0,iY=0,iZ=0; // zerando variáveis para o proximo ciclo
+        
+        printf("\nDeseja executar novamente o programa ? S = SIM e n = NÃO: ");
+        scanf(" %c", &k);
+    }
+
+   return(0);
+}

@@ -1,0 +1,33 @@
+// Faça um programa que verifique qual a estação climática de acordo com o mês que o usuário digitar e imprima a estação do ano na tela.
+// • Primavera: setembro / outubro / novembro • Verão: dezembro / janeiro / fevereiro • Outono: março / abril / maio • Inverno: junho / julho / agosto
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main(){
+    setlocale (LC_ALL,"Portuguese");
+    int mes;
+    char estac;
+    
+    printf("Digite o número do mês desejado: ");
+    scanf("%d", &mes);
+    
+    switch(mes){
+        case 1 : printf("Verão");break;
+        case 2 : printf("Verão");break;
+        case 3 : printf("Outono");break;
+        case 4 : printf("Outono");break;
+        case 5 : printf("Outono");break;
+        case 6 : printf("Inverno");break;
+        case 7 : printf("Inverno");break;
+        case 8 : printf("Inverno");break;
+        case 9 : printf("Primavera");break;
+        case 10 : printf("Primavera");break;
+        case 11 : printf("Primavera");break;
+        case 12 : printf("Verão");break;
+        default : printf("O número digitado não corresponde a nenhum mês.");break;
+    }
+  
+    return 0;
+}
+

@@ -1,0 +1,33 @@
+// A cidade de São Paulo tem uma lei que restringe a circulação de veículos numa determinada área conhecida como centro expandido, que baseia-se no número final
+// da placa dos veículos. Faça um programa que receba os números da placa e verifique se é rodízio do carro ou não.
+// • Placa final 1 ou 2: rodízio segunda feira
+// • Placa final 3 ou 4: rodízio terça feira
+// • Placa final 5 ou 6: rodízio quarta feira
+// • Placa final 7 ou 8: rodízio quinta feira
+// • Placa final 9 ou 0: rodízio sexta feira
+
+#include <stdio.h>
+#include <math.h>
+int main(){
+
+    int placa;
+    
+    printf("Digite o número final da sua placa:  ");
+    scanf ("%d", &placa);
+    switch(placa){
+        case 1 : printf ("Rodízio na segunda feira");break;
+        case 2 : printf ("Rodízio na segunda feira");break;
+        case 3 : printf ("Rodízio na terça feira");break;
+        case 4 : printf ("Rodízio na terça feira");break;
+        case 5 : printf ("Rodízio na quarta feira");break;
+        case 6 : printf ("Rodízio na quarta feira");break;
+        case 7 : printf ("Rodízio na quinta feira");break;
+        case 8 : printf ("Rodízio na quinta feira");break;
+        case 9 : printf ("Rodízio na sexta feira");break;
+        case 0: printf ("Rodízio na sexta feira");break;
+        default: ("O número não corresponde a nenhum rodízio"); break;
+    }
+    return 0;
+}
+
+

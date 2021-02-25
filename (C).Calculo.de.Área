@@ -1,0 +1,37 @@
+//Victor é um estudante do curso de Química que pretende calcular o volume dos principais sólidos geométricos conhecidos como cubo, 
+// paralelepípedo e cilindro. Com base nisso, construa um programa que atenda a necessidade deste usuário.
+// • Volume cubo: lado * lado * lado • Volume paralelepípedo: comprimento * largura * altura • Volume cilindro: PI * (raio da base * raio da base)* altura_cl.
+
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
+#define PI 3.14
+int main(){
+  float vol,lado,comp,alt,raiobase;
+  int desj;
+  printf("O que você deseja saber o volume ? 1 - Cubo, 2 - Paralelepípedo e 3 - Cilindro :  ");
+  scanf("%d", &desj);
+  
+  switch(desj){
+    case 1: printf("Como a opção escolhida foi um Cubo, digite a medida do lado: ");
+    scanf("%f",&lado);
+    vol = lado * lado * lado;
+    printf("O volume do cubo é : %.2f",vol); break;
+    case 2: printf("Como a opção escolhida foi um Paralelepípedo, digite a medida do lado: ");
+    scanf("%f",&lado);
+    printf("Como a opção escolhida foi um Paralelepípedo, digite a medida do comprimento: ");
+    scanf("%f",&comp);
+    printf("Como a opção escolhida foi um Paralelepípedo, digite a medida da altura: ");
+    scanf("%f",&alt);
+    vol = alt * comp * lado;
+    printf("O volume do Paralelepípedo é: %.2f ", vol);break;
+    case 3:printf("Como a opção escolhida foi um Cilindro, digite a medida do raio da base: ");
+    scanf("%f",&raiobase);
+    printf("Como a opção escolhida foi um Cilindro, digite a medida da altura: ");
+    scanf("%f",&alt);
+    vol = PI * (raiobase * raiobase) * alt;
+    printf("O volume do Cilindro é: %.2f ", vol);break;
+    default: ("As respostas não condizem a nenhum sólido geométrico");
+  }
+    return 0 ; 
+}

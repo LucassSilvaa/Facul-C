@@ -1,0 +1,14 @@
+// F A T O R I A L 
+#include <stdio.h>
+#include <math.h>
+int main(){
+    int fat, resp = 1;
+    printf ("Fat ? ");
+    scanf ("%d",&fat);
+    for (  ; fat >= 1; --fat){
+        resp *= fat;
+    }
+ printf ("A resp é : %d", resp);
+    
+    return 0;
+}

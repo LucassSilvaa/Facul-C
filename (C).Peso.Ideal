@@ -1,0 +1,30 @@
+//Fazer um programa para ler sexo (char) e altura de uma pessoa e, então,calcular o peso ideal dessa pessoa.
+// • para homens o peso ideal é 72.7*altura − 58 • para mulheres o peso ideal é 62.1*altura − 44.7
+#include <stdio.h>
+#include <math.h>
+#include <locale.h>
+
+int main(){
+    
+   setlocale(LC_ALL, "Portuguese");
+   float altura, pesidl;
+   char sexo;
+   
+   printf("Digite seu sexo(H/M): ");
+   scanf("%s",&sexo);
+   printf("\nDigite a sua altura (em metros): ");
+   scanf("%f",&altura);
+   
+   switch(sexo)
+   {
+   case 'H': pesidl = (72.7*altura)-58;
+   printf("O seu peso ideal é: %.2f", pesidl ); break;
+   
+   case 'M': pesidl = (62.1*altura)-44.7;
+   printf("O seu peso ideal é %.2f", pesidl ); break;
+   
+   default: printf ("Resultado impossibilitado"); break;
+   }
+    return 0;
+}
+
